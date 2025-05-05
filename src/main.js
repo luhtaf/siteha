@@ -23,4 +23,8 @@ app.use(PrimeVue, {
 app.use(ToastService);
 app.use(ConfirmationService);
 
+import AppDataTable from './components/AppDataTable.vue';
+
+app.component('AppDataTable', AppDataTable);
+
 app.mount('#app');

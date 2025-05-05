@@ -14,6 +14,11 @@ const router = createRouter({
                     component: () => import('@/views/Dashboard.vue')
                 },
                 {
+                    path: '/sektor',
+                    name: 'root-sektor',
+                    component: () => import('@/views/pages/SektorManagement.vue')
+                },
+                {
                     path: '/uikit/formlayout',
                     name: 'formlayout',
                     component: () => import('@/views/uikit/FormLayout.vue')
@@ -131,7 +136,29 @@ const router = createRouter({
             path: '/auth/error',
             name: 'error',
             component: () => import('@/views/pages/auth/Error.vue')
+        },
+        {
+            path: '/pokemon',
+            name: 'pokemon-list',
+            component: () => import('@/views/pages/PokemonBrowser.vue')
+        },
+        {
+            path: '/pokemon/:poke',
+            name: 'pokemon',
+            component: () => import('@/views/pages/PokemonDetail.vue')
         }
+        // {
+        //     path: '/sektor',
+        //     component: AppLayout,
+        //     name: 'sektor',
+        //     children: [
+        //         {
+        //             path: '/',
+        //             name: 'root-sektor',
+        //             component: () => import('@/views/pages/SektorManagement.vue')
+        //         }
+        //     ]
+        // }
     ]
 });
 

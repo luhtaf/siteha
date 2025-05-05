@@ -5,6 +5,14 @@ import AppMenuItem from './AppMenuItem.vue';
 
 const model = ref([
     {
+        label: 'Pokemon',
+        items: [{ label: 'Pokemon', icon: 'pi pi-fw pi-users pi-spin', to: '/pokemon' }]
+    },
+    {
+        label: 'SITEHA',
+        items: [{ label: 'Sektor', icon: 'pi pi-fw pi-home', to: '/sektor' }]
+    },
+    {
         label: 'Home',
         items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }]
     },
